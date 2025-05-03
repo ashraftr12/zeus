@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    outline: 1px solid white;
+
+}
+body{
+    background-color: #2d2d2d;
+    color: white;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 10px; 
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+ul li{
+    flex: 1 1 45%;
+}
+ul li a{
+    padding: 15px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: red;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text-box{
+    width:350px ;
+    margin: 75px 100px;
+}
+.text-box p{
+    color: white;
+}
+.text-box span{
+    color: red;
+    font-size: 4rem;
+}
+.img-box{
+    transition: 1s;
+    animation-name: zeus;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    filter: drop-shadow(1px 1px 50px red);
+}
+footer{
+    margin-right: 250px;
+    display: flex;
+    align-items: center;
+}
+footer a{
+    color: red;
+    padding: 5px;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+.icn p a:hover{
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+
+}
+.click a{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 14px;
+    border: 2px solid red;
+    border-radius: 30px;
+    width: fit-content;
+    background-color: red;
+    transition: 0.5s;
+}
+.click a:hover{
+    background-color: transparent;
+}
+i{
+    color: white;
+    font-size: 2rem;
+}
+@keyframes zeus{
+    0%{
+        translate: 0 0;
+    }
+    50%{
+        translate:0  25px;
+    }
+    100%{
+        translate: 0 0;
+    }
+}
+@media (max-width:600px) {
+    nav{
+        width: fit-content;
+    }
+    ul{
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    ul li{
+        flex: 1 1 100%;
+
+    }
+    main{
+        flex-direction: column;
+        width: 80%;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .img-box{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        filter: drop-shadow(1px 1px 20px red);
+    }
+    footer{
+        margin: 0 0;
+        display: flex;
+        margin: 50px 35px;
+        width: 60%;
+        height: 150px;
+    }
+    footer a{
+        padding: 10px;
+    }
+}
